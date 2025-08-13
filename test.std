@@ -1,0 +1,20 @@
+setcpm(120/4)
+sound("<bd bd hh bd rim bd hh bd cp>*8")
+
+sound("bd hh*2 sd [hh bd] bd - [hh sd] [cp rim]").bank("RolandCompurhythm1000")
+
+sound("bd hh*2 sd [hh bd] bd - [hh sd] [cp rim]")
+
+setcpm(90/4)
+$: sound(`
+[-  -  oh - ] [-  -  -  - ] [-  -  -  - ] [-  -  -  - ],
+[hh hh -  - ] [hh*32 -  hh - ] [hh -  hh*16 - ] [hh -  hh - ],
+[-  -  -  - ] [- -  -  - ] [-  -  -  - ] [cp -  -  - ],
+[bd -  -  - ] [-  -  -  bd] [-  -  bd - ] [-  -  -  bd]
+`)
+
+$: note("<[36 48]*4 [34 46]*4 [41 53]*4 [39 51]*4>*2")
+.sound("gm_acoustic_bass").sound("sawtooth").lpf(500)
+
+
+$: sound("gm_fx_atmosphere").lpf(sine.range(100, 2000).slow(4))
