@@ -1,0 +1,4 @@
+setcpm(120/4)
+$: note("<44 36*2 32 42*2>").sound("gm_blown_bottle").lpf(2000)
+
+$: s("- space:1 - -").room(.5).gain(0.04)
