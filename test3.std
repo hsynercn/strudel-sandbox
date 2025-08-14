@@ -6,3 +6,5 @@ $: s("- space:1 - -").room(.5).gain(0.04)
 $: s("- - space:1 -").speed(-1).room(.5).gain(0.03)
 
 $: sound("<brown < brown - >>").gain(0.4)
+
+$: note("36*2 - 36 -").sound("mt").lpf(200).gain(0.23)
